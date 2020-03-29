@@ -6,7 +6,7 @@ conn = sqlite3.connect("chromawesome.db")
 c = conn.cursor()
 
 #you have to use this if you want to re-run the script after the very first time you run it, 
-c.execute("DROP TABLE entries")
+#c.execute("DROP TABLE entries")
 
 c.execute('''CREATE TABLE entries
               (accession VARCHAR(10), 
