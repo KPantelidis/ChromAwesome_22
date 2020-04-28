@@ -10,7 +10,7 @@ Group Project/Birkbeck University of London
 | Faizan Shaikh | Alternative FrontEnd  | faizanshaikh1897@gmail.com  |
 
 ## Requirements
-Our team has been assigned to work in chromosome 22.
+Our team has been assigned chromosome 22.
 
 [Instructions/Requirements](http://www.bioinf.org.uk/teaching/bbk/biocomp2/project/index.html) can be found here
 
