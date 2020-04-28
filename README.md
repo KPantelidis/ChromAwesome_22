@@ -1,7 +1,7 @@
 # Biocomputing II
-Group Project
+Group Project/Birkbeck University of London
 
-# ChromAwesome_22
+## ChromAwesome_22
 | Members  | Layer |  Email |
 | --- | --- | --- |
 | Kostas Pantelidis  | Database/First  |  kpantelidis91@gmail.com |
