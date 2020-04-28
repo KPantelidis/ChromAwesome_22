@@ -1,0 +1,347 @@
+LOCUS       AB002059               28984 bp    DNA     linear   PRI 14-APR-2000
+DEFINITION  Homo sapiens DNA for Human P2XM, complete cds.
+ACCESSION   AB002059
+VERSION     AB002059.1  GI:2350848
+KEYWORDS    Human P2XM.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Urano,T., Nishimori,H., Han,H., Furuhata,T., Kimura,Y., Nakamura,Y.
+            and Tokino,T.
+  TITLE     Cloning of P2XM, a novel human P2X receptor gene regulated by p53
+  JOURNAL   Cancer Res. 57 (15), 3281-3287 (1997)
+   PUBMED   9242461
+REFERENCE   2  (bases 1 to 28984)
+  AUTHORS   Nakamura,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAR-1997) Yusuke Nakamura, The Inst. of Medical
+            Science, The University of Tokyo, Lab. of Molecular Medicine, Human
+            Genome Center; 4-6-1, Shirokanedai, Minato-ku, Tokyo 108, Japan
+            (E-mail:yusuke@ims.u-tokyo.ac.jp, Tel:81-3-5449-5372,
+            Fax:81-3-5449-5433)
+FEATURES             Location/Qualifiers
+     source          1..28984
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="22"
+                     /map="22q11"
+     gene            join(9106..9239,9843..9993,11889..11960,16575..16650,
+                     16841..16934,17017..17097,17174..17315,17408..17517,
+                     19708..19801,19914..19979,20155..20232,20323..20520)
+                     /gene="HP2XM"
+     CDS             join(9106..9239,9843..9993,11889..11960,16575..16650,
+                     16841..16934,17017..17097,17174..17315,17408..17517,
+                     19708..19801,19914..19979,20155..20232,20323..20520)
+                     /gene="HP2XM"
+                     /codon_start=1
+                     /product="Human P2XM"
+                     /protein_id="BAA22047.1"
+                     /db_xref="GI:2350849"
+                     /translation="MGSPGATTGWGLLDYKTEKYVMTRNWRVGALQRLLQFGIVVYVV
+                     GWALLAKKGYQERDLEPQFSIITKLKGVSVTQIKELGNRLWDVADFVKPPQGENVFFL
+                     VTNFLVTPAQVQGRCPEHPSVPLANCWVDEDCPEGEGGTHSHGVKTGQCVVFNGTHRT
+                     CEIWSWCPVESGVVPSRPLLAQAQNFTLFIKNTVTFSKFNFSKSNALETWDPTYFKHC
+                     RYEPQFSPYCPVFRIGDLVAKAGGTFEDLALLGGSVGIRVHWDCDLDTGDSGCWPHYS
+                     FQLQEKSYNFRTATHWWEQPGVEARTLLKLYGIRFDILVTGQAGKFGLIPTAVTLGTG
+                     AAWLGVVTFFCDLLLLYVDREAHFYWRTKYEEAKAPKATANSVWRELALASQARLAEC
+                     LRRSSAPAPTATAAGSQTQTPGWPCPSSDTHLPTHSGSL"
+     exon            9106..9239
+                     /gene="HP2XM"
+                     /number=1
+     exon            9843..9993
+                     /gene="HP2XM"
+                     /number=2
+     exon            11889..11960
+                     /gene="HP2XM"
+                     /number=3
+     exon            16575..16650
+                     /gene="HP2XM"
+                     /number=4
+     exon            16841..16934
+                     /gene="HP2XM"
+                     /number=5
+     exon            17017..17097
+                     /gene="HP2XM"
+                     /number=6
+     exon            17174..17315
+                     /gene="HP2XM"
+                     /number=7
+     exon            17408..17517
+                     /gene="HP2XM"
+                     /number=8
+     exon            19708..19801
+                     /gene="HP2XM"
+                     /number=9
+     exon            19914..19979
+                     /gene="HP2XM"
+                     /number=10
+     exon            20155..20232
+                     /gene="HP2XM"
+                     /number=11
+     exon            20323..>20520
+                     /gene="HP2XM"
+                     /number=12
+ORIGIN      
+        1 ggtgaaacct catctctact aaaaatacaa aaaattggtc aggcgtggtg gctcatgcct
+       61 gtaatcccag cactttggga ggccgaggcg ggcggatcac taggtcagga gatcaagacc
+      121 atcctggcta acacggtgaa accccggctc tactaaaaaa ttaaaaaaaa aaaaaaaacg
+      181 ttagccaggc gcgatggcgg gcacctgtag tcccagctac tcgggaggct gaagcaggag
+      241 aatggcatga accccggagg cggagcttgc agtgagctga gatcgtgcca ctgcactcca
+      301 gcctgggcga cagagcaaga ctctgtctca aaaaaaaaaa aaaaaatagc caggcatggt
+      361 ggcgggcgcc tgtaatccca gctactcagg aggctgagtc aggagaattg cttgaaccgg
+      421 ggaggcagag gctgcagtga gccgagatca catcactgca ctccagcctg agtgacaaga
+      481 gtgaaactcc gtctcaaaac aaacaaacaa acaagaatgt atggtaaatc acactaagac
+      541 tgacaaaaag gaacttaaga gcaaagagaa ttaattcaac aaggtccatc taaggctgga
+      601 ctatcttctg gggggaggag aggctgtgac tttatctccc cacagactag cctccctact
+      661 gtctcacaag acttagttac aataggaaac ctctgcacag catagcatct cccacagtgc
+      721 ctgccagcta aggatgtctt caccttccaa atgtaacact aattgaaaga aaaattcctc
+      781 tactcaagtt gagaggctta ataattagac acagaatgga gggtttcacc tcctacctgt
+      841 aacatctaac atctaaggtc tgtaatcctc ctatgtaaca tgtaatgaac attccaggtt
+      901 ggtgtaactg ttgtagattt aacccttctt tttcctcttt tttttttttt tttttttttt
+      961 ttgagacagt cacgctctgt tgcccaggtt ggagtacagt ggtgatcttg gctcactgca
+     1021 atctctgcct ccctgtctca agcgatcctc ccacctccac ctccccatta gctatgactg
+     1081 caggcatgca caaccatacc tggataattt ttatatcttt tgtagagaca gggtcgcact
+     1141 atgttgccca ggctggtctt gaactcctgg gttcaagcaa tcttctcacc tgggcttctc
+     1201 aaagtgctgg gattacaggc atgtgtcact gagcctggcc gattttaccc tgttctatga
+     1261 atcactttaa atctgtcaac ttaaagatgg tttgcatcaa cgtgagatga aaaagagaga
+     1321 tgatctgtgt caaggtgttg taaagtggct gagagagggc cagacagatt caagaagttg
+     1381 tgtgtgttca gaggcaagtt atggccattc cacatgggaa aaagaagaca catacctgtg
+     1441 actttctcat atcatttcaa tctggaatga tcctggaact tgcaactcct caaacacctt
+     1501 cagaactcat tgagacttat aaatgtggga tctatagctt tgcctaatgt gggaaaccac
+     1561 tgtagacagg ggctcttaac taaccatagg gcacaaagtt gaccaacaca ggtgtggtga
+     1621 ggcatttagc ctagtcatca caacatatct tcgagcctga cattctgtta tttggcttcc
+     1681 aaatacatgg tacttttctt ttggtagaca actgactgta agcatagcta aaggagcacc
+     1741 aaatcatcag tctgattgtg tgtgaggcag aggtctctgc ttggtttgga gaaagggcaa
+     1801 agacctgcct ttggtcttca cagtaaacac tgcacaatat attttataat ctttacagaa
+     1861 atattagtgt tgcccaaaat tcagtgacaa caggtgacca agatgatgta aagtgtaaaa
+     1921 accactattt ataacacaaa aaatgataac atagaacctg acaaattact aaagtgagca
+     1981 gtggagtaat gtggaggaca gaccaggacc tgcagtcaga taatctctga tttctctctg
+     2041 catcacttgc tgcctgtgag gctccagaca cctaaagcta tctccgccct ggttttcttt
+     2101 tcttttttct ttttctttct tttttttttt ttggagaggt agtctcgctc tgttgcccag
+     2161 gctggagtgc agtggtgcaa tctcgactca ctgcaagctc tgcctcccgg gttcacgcca
+     2221 tcctcctgcc tcagcctccc gaatagctgg gaccacaggt gtctgccacc acacccggct
+     2281 aattttttgt attttttagt agagccgggg tttcaccgtg ttagccagga ccgtctcaat
+     2341 ctcctgacct cgtgatctgc ctgccttggc ctcccaaagt gctgggatta caggcatgag
+     2401 ccaccgtgcc cagcctcagc ctctgttttc taaagtgtaa gatactggta atattgcccc
+     2461 atgaacttta aagggtagtg gttaaggtat gagggaacat aaagtatttg gtaaagtata
+     2521 aggcggtagg aaataaatta ctaaaattat tatccttgca acctagctga cgtgaaaagg
+     2581 ggttgtctcc ataaaggatg cgggccttca ggggcagcat tattctgcag gtctcctgct
+     2641 tcctgatggc acaaggactc cacatcaccc agtcctacct taaatccaat cggacaccag
+     2701 tccacaaact ggttggtgtg cttgctcttg atggtggcga cagccgcact gacatctttc
+     2761 aggaccacat cccctctgta caacatgcag cagcccatgt acttgccatg gtgagggtca
+     2821 cactagacca tctgattggc tggctcgaag cgggcactgg cgatcttggc cacggacagc
+     2881 tgctcatggt aggccttctt ggctgagatg accagggcgt aggtggccag ggggaggtgg
+     2941 atgtgggggt acggcaccaa gttggtttgg aattctgtca agtacacatt cagggcccca
+     3001 tcaaatcaca gggaggccgt gatggaggac acgatctgcc cagacgactg aggttggtgt
+     3061 acgtgggaca ctcgatgtcc aggttgtgct gacatgtcat aggtggcttt gctgttgact
+     3121 atgaaggcac agtcagaatg ttccagggtc gtgtaggtgg tcaggatgga gttgtagggc
+     3181 tccgtcatgg ccatggagac ctggggggct gggcaaatgg caaactccag cttggacttc
+     3241 ttcccgtagt ccaccgagag ccgcttcatg agcagagaca cgaacccaga gccagtgccg   
+//
+LOCUS       AB016435                1556 bp    DNA     linear   PRI 14-APR-2000
+DEFINITION  Homo sapiens EWS gene, partial cds.
+ACCESSION   AB016435 D38407
+VERSION     AB016435.1  GI:3357903
+KEYWORDS    EWS; translocation junction.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Bhagirath,T., Abe,S., Nojima,T. and Yoshida,M.C.
+  TITLE     Molecular analysis of a t(11;22) translocation junction in a case
+            of Ewing's sarcoma
+  JOURNAL   Genes Chromosomes Cancer 13 (2), 126-132 (1995)
+   PUBMED   7542907
+REFERENCE   2  (bases 1 to 1556)
+  AUTHORS   Abe,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-JUL-1998) Syuiti Abe, Hokkaido University, Faculty of
+            Science, Chromosome Research Unit; North 10, West 8, Kita-ku,
+            Sapporo, Hokkaido 060-0810, Japan (E-mail:sabe@ees.hokudai.ac.jp,
+            Tel:+81-11-706-2752, Fax:+81-11-736-6304)
+COMMENT     On Jul 30, 1998 this sequence version replaced gi:902928.
+            D38407: submitted (27-Sep-1994).
+FEATURES             Location/Qualifiers
+     source          1..1556
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="22"
+                     /map="22q12"
+                     /tissue_type="placenta"
+     gene            <1..>1556
+                     /gene="CTA-221G9.5"
+     CDS             join(<1..74,1546..>1556)
+                     /gene="CTA-221G9.5"
+                     /codon_start=2
+                     /protein_id="BAA31990.1"
+                     /db_xref="GI:3357904"
+                     /translation="PPQTGSYSQAPSQYSQQSSSYGQQSSFR"
+     exon            <1..74
+                     /gene="CTA-221G9.5"
+                     /number=7
+     intron          75..1545
+                     /gene="EWS"
+                     /number=7
+     exon            1546..>1556
+                     /gene="CTA-221G9.5"
+                     /number=8
+ORIGIN      
+        1 cccaccccaa actggatcct acagccaagc tccaagtcaa tatagccaac agagcagcag
+       61 ctacgggcag cagagtgagt tgctaagaga gaaaaccaaa taagaatgaa tgtgtttaga
+      121 gtttttttgt ggggttgatt ttttttgttg gtttgttttt cttttgagat ggagtttcac
+      181 tcttggggct gaggctggag atacgtggtg ccatctcagc tcactgcagc ctccgcctcc
+      241 tggttcaagc aattctcctg ccccagcctc ccgagtagct gagatgatag gcgcctgcca
+      301 ctatgcccag ctattttttg tatttttcgt agagacgggg tttcaccatg ttggtcaggc
+      361 tggtctcgaa ctcctgacct caggtgatcc tcccgcctca gccacccaga gtgttgggat
+      421 tacagtcatg agccactgcg cccagccacg tttggagttt ttgaacaggg ggaatactct
+      481 ttgccattgt ttgcttttgg aatccaggac acatctttag ggcatggcat tccagctaac
+      541 atcttggatg ccccagtgaa gatttcagtg cttttttcca atttgttttt agtatgcctt
+      601 ggcaaaaaag aaaagagata ctaattgatc agaaaaaatg ttttagactg ctagccctgc
+      661 tgtctttggg gaagttgtat gcagtgagta aattcaacat cgtttttggc ctccctatca
+      721 gtcattaatg taaagtgggg aggcagctat tgcaggccac tatgattttg atagtcaagt
+      781 aaaagctatg tttttttgtt gctgtttgtt tatatccatt aaggggaaaa atggccaggc
+      841 atggtggctc acacctgtaa tcccagcact ttgggggagg ccaaggcagg aggatcactt
+      901 gagaccagga gtttgagacc accctgggca acatagtgag accctgtctt tttaaagata
+      961 aataaagatt ctttaagaaa atagaaaagg aaagggggaa aaataatcct cctcacagaa
+     1021 tatttgcagt tcttctgtat ggagagaggt aaccaaaaca cataattatc ttcagaattt
+     1081 aggatcattg ctctttttaa attacattct atccacgggg atttctcaac aactcaaagg
+     1141 agtagtgttg atttatggag ctcagcccct agcagtgtgc taaagcccta agaaacctgg
+     1201 ctctgttttc atttcttgag tttagctcaa aagaagctgc ttttggagac atcttaggat
+     1261 atagaaccct ataaactata tgttagccag agggcttttt ttgttgttgt tatttagaag
+     1321 aggtttatta taggctaact atataaggtt atttcagctg tgatgatcca gcagttttgt
+     1381 tgaacttaaa agagcctacc tattaaggat gctttatcgt gatgtaaaga agatggtgcc
+     1441 ttggttagtg ccttggaatt gaggattttg tgattccagg agaaagtaca tcaggcagtg
+     1501 gtgtaaatgc tggtccatgg cttacagatg tgactctttc ctcaggttca ttccga
+//
+LOCUS       AB007166                 745 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein L3, partial cds.
+ACCESSION   AB007166
+VERSION     AB007166.1  GI:3077761
+KEYWORDS    ribosomal protein L3.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 745)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..745
+	 source          1..745
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="22"
+                     /note="D22S423-D22S1171"
+     CDS             join(<1..68,392..511,718..>745)
+                     /codon_start=3
+                     /product="ribosomal protein L3"
+                     /protein_id="BAA25828.1"
+                     /db_xref="GI:3088345"
+                     /translation="NDFVMLKGCVVGTKKRVLTLRKSLLVQTKRRALEKIDLKFIDTT
+                     SKFGHGRFQTMEEKKAFMGPLKKDRIA"
+	source          500..5000
+     exon            <1..68
+                     /product="ribosomal protein L3"
+     intron          69..391
+     exon            392..511
+                     /product="ribosomal protein L3"
+     intron          512..717
+     exon            718..>745
+                     /product="ribosomal protein L3"
+ORIGIN      
+        1 ccaatgactt tgtcatgctg aaaggctgtg tggtgggaac caagaagcgg gtgctcaccc
+       61 tccgcaaggt gaggcaggtc ctgacttgtc atgggggggc tcttgtagag ggaggatcca
+      121 aggccacaga cgctggtggc cctgtggtgg gagaggaaag gaaggagagg gtgttggcag
+      181 tcctttcaca ctggctttga agtcctgaga tgaggaaatt cccagtctgg ccttgctggg
+      241 ctgtttgctg ctttgagtgt gtcctcatct gccggatggt gggggaggct gaattgatcg
+      301 tgtggcttcc cagatgcagg ggcgctgtga acagtgctga ggaaagcctg gctcctcgta
+      361 atcctaaatc ccttcccctc ttggcccata gtccttgctg gtgcagacga agcggcgggc
+      421 tctggagaag attgacctta agttcattga caccacctcc aagtttggcc atggccgctt
+      481 ccagaccatg gaggagaaga aagcattcat ggtgagcacc tctgcctgcc cccctcgctg
+      541 ggtgtggtgg cttgggcagc cgcctgcctt tggctccagc cggggtaggg gtggtcttga
+      601 tgccttaggc ctctcttgtg gctgtggaga ctggcccaga gtcttggtct cctctagagt
+      661 gggcatctgc tgtcacctgt catcttctac ctctgactac tgcctctctc cccacaggga
+      721 ccactgaaga aagaccgaat tgcaa
+//
+LOCUS       HQ202737                 344 bp    DNA     linear   PRI 14-MAR-2011
+DEFINITION  Homo sapiens isolate 9000609148872* platelet glycoprotein Ib beta
+            chain precursor (GP1BB) gene, exon 2 and partial cds.
+ACCESSION   HQ202737
+VERSION     HQ202737.1  GI:325551370
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 344)
+  AUTHORS   Yan,L., Zhu,F., Liu,Y. and Xu,X.
+  TITLE     Polymorphism research of membrane glycoprotein genes related to
+            human platelet alloantigens in Chinese platelet donors
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 344)
+  AUTHORS   Yan,L., Zhu,F., Liu,Y. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-AUG-2010) Institute of Transfusion Medicine, Blood
+            Center of Zhejiang Province, No. 345 Wulin Road, Hangzhou, Zhejiang
+            310006, China
+FEATURES             Location/Qualifiers
+     source          1..344
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /isolate="9000609148872*"
+                     /isolation_source="volunteer platelet donor"
+                     /db_xref="taxon:9606"
+                     /chromosome="22"
+                     /map="22q11.21"
+                     /country="China: Blood Center of Zhejiang Province"
+                     /PCR_primers="fwd_seq: cggggtggtcagggtggaga, rev_seq:
+                     gcgccgtcaggttgttgc"
+     gene            <1..>344
+                     /gene="GP1BB"
+     variation       120
+                     /gene="GP1BB"
+                     /note="IVS1-27; GP1BBvar2"
+                     /replace="c"
+     mRNA            <147..>344
+                     /gene="GP1BB"
+                     /product="platelet glycoprotein Ib beta chain precursor"
+     CDS             <147..>344
+                     /gene="GP1BB"
+                     /note="CD42c"
+                     /codon_start=3
+                     /product="platelet glycoprotein Ib beta chain precursor"
+                     /protein_id="ADZ28541.1"
+                     /db_xref="GI:325551371"
+                     /translation="PRGALSLLLLLLAPPSRPAAGCPAPCSCAGTLVDCGRRGLTWAS
+                     LPTAFPVDTTELVLTGNNLTA"
+     exon            <147..>344
+                     /gene="GP1BB"					 
+                     /number=2
+ORIGIN      
+        1 cggggtggtc agggtggaga ggctggcggg ctaccgggac gccgggcatc aggggctgga
+       61 tggagccggg ccggcagtct gggtactcag agatgtcgcc caggtgcccg ccgaccgctt
+      121 ggcttactgc ggcgcttccc ttgcagggcc gcgcggggcg ctgagcttac tgctcctgct
+      181 gctggccccg ccgagccgcc cggccgcagg ttgcccggcg ccctgtagct gcgcggggac
+      241 gctcgtggac tgcgggcgcc gcgggctgac ttgggcctcg ctgccgaccg ccttccctgt
+      301 cgacacaacc gagctggtgc tgaccggcaa caacctgacg gcgc
+//
