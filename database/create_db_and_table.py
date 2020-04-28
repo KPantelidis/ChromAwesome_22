@@ -12,6 +12,7 @@ c.execute('''CREATE TABLE entries
               (accession VARCHAR(10), 
               gene_id VARCHAR(10), 
               location VARCHAR(10),
+              dna_seq MEDIUMTEXT,
               gene_bp INT,
               protein_id VARCHAR(20),
               product VARCHAR(50),
