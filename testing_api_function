@@ -1,0 +1,19 @@
+#--------testing and example of the api function 'dict_entries(a)' from the dummy_genbank file----#
+#-----returns a dictionary for the entry that the BL user asked for the parameter 'a'------#
+
+[IN]:
+
+dict_entries('AB007166')
+
+[OUT]:
+
+{'accession': 'AB007166',
+ 'gene_bp': 745,
+ 'gene_id': 'None',
+ 'location': 'None',
+ 'dna_seq': 'ccaatgactttgtcatgctgaaaggctgtgtggtgggaaccaagaagcgggtgctcaccctccgcaaggtgaggcaggtcctgacttgtcatgggggggctcttgtagagggaggatccaaggccacagacgctggtggccctgtggtgggagaggaaaggaaggagagggtgttggcagtcctttcacactggctttgaagtcctgagatgaggaaattcccagtctggccttgctgggctgtttgctgctttgagtgtgtcctcatctgccggatggtgggggaggctgaattgatcgtgtggcttcccagatgcaggggcgctgtgaacagtgctgaggaaagcctggctcctcgtaatcctaaatcccttcccctcttggcccatagtccttgctggtgcagacgaagcggcgggctctggagaagattgaccttaagttcattgacaccacctccaagtttggccatggccgcttccagaccatggaggagaagaaagcattcatggtgagcacctctgcctgcccccctcgctgggtgtggtggcttgggcagccgcctgcctttggctccagccggggtaggggtggtcttgatgccttaggcctctcttgtggctgtggagactggcccagagtcttggtctcctctagagtgggcatctgctgtcacctgtcatcttctacctctgactactgcctctctccccacagggaccactgaagaaagaccgaattgcaa',
+ 'cds': '(<1..68,392..511,718..>745)',
+ 'complement': 'NO',
+ 'protein_id': 'BAA25828.1',
+ 'product': 'ribosomal protein L3',
+ 'translation': 'NDFVMLKGCVVGTKKRVLTLRKSLLVQTKRRALEKIDLKFIDTTSKFGHGRFQTMEEKKAFMGPLKKDRIA'}
