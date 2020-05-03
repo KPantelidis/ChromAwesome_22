@@ -1,3 +1,6 @@
+import pymysql
+import pymysql.cursors
+
 def dict_entries(a):
     '''
     gets user's input,
@@ -12,13 +15,18 @@ def dict_entries(a):
               values: the value for each column for the row that the parameter 'a' belongs to    
     '''
     
-    import sqlite3   
-    conn = sqlite3.connect("chromawesome.db")
+    # Set parameters
+    config_dict = {'host' :'hope',
+                   'user' : 'pk001',  
+                   'password'   : 'xxx',   
+                   'port'     : 3306}
+    # Connect to the database
+    conn = pymysql.connect(**config_dict)
     c = conn.cursor()
 
-    keys = ['accession','gene_id','location','DNA_seq',
-            'gene_start','gene_end','CDS_start','CDS_end','CDS',
-            'protein_id','product','protein_seq']
+    keys = ['accession','gene_bp','gene_id','location',
+            'dna_seq', 'cds', 'complement',
+            'protein_id','product','translation']
     
     c.execute("SELECT * FROM entries WHERE \
                 accession = '%s' OR \
