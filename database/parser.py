@@ -119,13 +119,14 @@ for i in my_list:
     else:
         cds_list.append('None')
 
-#------- complement-----------
+#--------complement----------
 complement_list = []
 temp = []
 for i in my_list:
     p8 = re.compile(r'CDS\s*(.[^\/]*?)\/')
-    p8 = p8.findall(i)
-    temp.append(p8[0])
+    if p8.search(i):
+        p8 = p8.findall(i)
+        temp.append(p8[0])
 for i in temp:
     p = re.compile(r'complement')
     if p.search(i):
