@@ -1,6 +1,6 @@
 import pymysql
 import pymysql.cursors
-from parse import list_of_entries
+from parser import list_of_entries
 
 # Set parameters
 
