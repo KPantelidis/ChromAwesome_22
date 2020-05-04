@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Last update Mon May 4 2020
+Created for Group Project
+BBK UNI/Biocomputing II
+
+@author: Kostas Pantelidis
+"""
+
 import pymysql
 import pymysql.cursors
 
@@ -16,11 +25,14 @@ def dict_entries(a):
     '''
     
     # Set parameters
+    
     config_dict = {'host' :'hope',
                    'user' : 'pk001',  
-                   'password'   : 'xxx',   
+                   'password'   : 'wbjcod3k6',   
                    'port'     : 3306}
+
     # Connect to the database
+    
     conn = pymysql.connect(**config_dict)
     c = conn.cursor()
 
@@ -28,14 +40,14 @@ def dict_entries(a):
             'dna_seq', 'cds', 'complement',
             'protein_id','product','translation']
     
-    c.execute("SELECT * FROM entries WHERE \
+    c.execute("SELECT * FROM pk001.entries WHERE \
                 accession = '%s' OR \
                 gene_id = '%s' OR \
                 location = '%s' OR \
                 protein_id = '%s' " %(a,a,a,a)) 
     
     try:
-        my_list = list(c.fetchone())  #'try' to populate the list if it has matched a search value. 
+        my_list = list(c.fetchone())  #'try ' to populate the list if it has matched a search value. 
                                         #If no match the 'except' will return False. 
     except:
         return False
