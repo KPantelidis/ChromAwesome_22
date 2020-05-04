@@ -1,7 +1,7 @@
 import re
 
 my_list = []
-with open('chrom_CDS_22.gz', mode="r") as bla:
+with gzip.open('chrom_CDS_22.gz', mode="rt") as bla:
     reader = bla.read()
     my_list = reader.split("//\n")
 
