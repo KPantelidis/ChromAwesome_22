@@ -12,7 +12,7 @@ echo "## Download and extract the data (GenBank file)"
 wget http://www.bioinf.org.uk/teaching/bbk/biocomp2/project/data/chrom_CDS_22.gz -O database
 
 echo "## Parse GeneBank file"
-python database/RUN_database.py
+python database/parser.py
 
 echo "## Populate Database"
 python database/create_table_and_populate.py
