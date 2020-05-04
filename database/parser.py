@@ -1,3 +1,4 @@
+import gzip
 import re
 
 my_list = []
