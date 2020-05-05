@@ -266,11 +266,10 @@ def DNA_Codon():
      
     codon_value = [codon_dict[key] for key in sorted(codon_dict.keys())]
     codon_key = list(sorted(codon_dict.keys()))
-    print(codon_value)
-    print(codon_key)
+  
     
     codon_list = list(zip(codon_value, codon_key))
-    print(codon_list)
+    
     
     config_dict = {'host' :'hope',
                'user' : 'pk001',  
