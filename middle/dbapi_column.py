@@ -1,3 +1,13 @@
+'''
+Last updated Tues May 5 2020
+
+The function of this code is to allow the Business Layer to access
+and retrieve specfic columns from the database.
+
+author: Annabel Page
+'''
+
+
 def return_column(name):
 
     ''' takes a column name and will return all data for that column.
