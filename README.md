@@ -20,8 +20,8 @@ This work has been tested on hope, a server that is internal to Birkbeck crystal
 
 To run and populate the database,
 
-1)clone to repository
-2)bash RUN_database.sh
+1) clone to repository\
+2) bash RUN_database.sh
 
 
 The RUN_database.sh file is supposed to download the chromosome zip file, run the file tha parses the GenBank file and then create and populate the table in the database.
