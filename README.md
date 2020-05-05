@@ -20,7 +20,7 @@ This work has been tested on hope, a server that is internal to Birkbeck crystal
 
 To run and populate the database,
 
-1) clone to repository\
+1) clone to repository
 2) bash RUN_database.sh
 
 
