@@ -1,3 +1,12 @@
+'''
+Last updated Tues May 5 2020
+
+The function of this code is to allow the Front End to remove raw data from the database
+and call functions that will perform manipulations on the data from the DB.
+
+author: Annabel Page
+'''
+
 import dbapi
 import dbapi_column
 from Bio import Restriction
@@ -12,7 +21,7 @@ import pymysql.cursors
 #specfic row of data
 
 def search_db():
-    '''will search DB for query value, either accession, gene_id, location or protein_id and return a dictionary with the search outcome
+    '''will search DB for query value, either accession, gene_id, location or protein_id and return a dictionary with the       search outcome
     
     param: nil - an input prompt will appear to insert a value
     return: a dictionary of all raw DB information'''
@@ -27,7 +36,7 @@ def column_list(name):
     '''takes a column name and will return all non-duplicated values and
     remove all 'None' values
 
-    param name: name of a column in SQL table, column names to choose from are either accession, gene_id, location or protein_id
+    param name: name of a column in SQL table, column names to choose from are either accession, gene_id, location or          protein_id. The search format must be in a string
     returns: a list of entries from column '''
 
     infolist = list(dbapi_column.return_column(name))
@@ -51,8 +60,8 @@ def search_RE(Search_Query, RE_name):
 
     param RE_name: the name of the restriction enzyme you want to search
                     either EcoRI, BamHI or BsuRI. The search format must be in
-                    the same case format as stated here and in a string eg: test = search_RE('EcoRI').
-    returns: the location of the searched enzyme in the sequence '''
+                    a string.
+    returns: a list of the location of the searched enzyme in the sequence '''
     
     amb = IUPACAmbiguousDNA()
     Database_Result = dbapi.dict_entries(Search_Query)
@@ -89,7 +98,7 @@ def CDS_markup(Search_Query):
     '''This function will take a DNA sequence, identify CDS sites and produce a marked up sequence
     that identifies one or more CDS sites in the DNA sequence.
 
-    param: user search query
+    param: user search query. The search format must be in a string
     return: marked up sequence in string format
     '''
     #Take the search term and search database for corresponding information
@@ -123,7 +132,7 @@ def CDS_markup(Search_Query):
 #return a list of all the coding DNA regions without the mark ups
 def CDS_DNA(Search_Query):
     '''This function will take the marked up CDS DNA sequence and extract only the CDS information
-    param: user search query
+    param: user search query. The search format must be in a string
     return: list of CDS DNA sequence '''
     
     CDS_Data = CDS_markup(Search_Query)
@@ -137,7 +146,7 @@ def CDS_Protein(Search_Query):
     '''Takes the list of CDS sequences and returns a list of the translated
     protein sequence
 
-    param: user search query
+    param: user search query. The search format must be in a string
     return: list of translated protein sequences '''
 
     CDS_List = CDS_DNA(Search_Query)
@@ -154,7 +163,7 @@ def matched_seq(Search_Query):
     '''takes a search query and will match the translated protein CDS sequence
     with the original CDS DNA sequence.
 
-    param: user search query
+    param: user search query. The search format must be in a string
     return: list of tuples of matched DNA and protein sequences '''
     CDS_Seq = CDS_DNA(Search_Query)
     trans_list = CDS_Protein(Search_Query)
@@ -170,7 +179,7 @@ def codon_freq(Search_Query):
     '''this function takes a user search query and will return a dictionary of codon
     usage frequencies from the DNA seq.
 
-    param: user search query
+    param: user search query The search format must be in a string
     return: dictionary of codons and their frequencies '''
 
     Database_Result = dbapi.dict_entries(Search_Query)
@@ -197,7 +206,7 @@ def CDS_RE(Search_Query, RE_Site):
     '''Will take a search query and specified RE and return the location of RE sites in
     the CDS sequence of the gene.
 
-    param: user search query, resriction enzyme name
+    param: user search query, resriction enzyme name. The search format must be in a string
     return: list of RE locations in seq '''
     CDS_Seq = CDS_DNA(Search_Query)
     print(CDS_Seq)
@@ -306,3 +315,4 @@ def get_DNA_codon():
     DNA_codon = list(c.fetchall())
     return(DNA_codon)
     
+
