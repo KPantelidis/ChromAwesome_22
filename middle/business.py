@@ -20,13 +20,13 @@ import pymysql.cursors
 #Create function that will store user input search query and search the database for
 #specfic row of data
 
-def search_db():
+def search_db(Search_Query):
     '''will search DB for query value, either accession, gene_id, location or protein_id and return a dictionary with the       search outcome
     
     param: nil - an input prompt will appear to insert a value
     return: a dictionary of all raw DB information'''
     
-    Search_Query = input("Please enter a valid accession, gene_id, location or protein_id: ")
+    
     Database_Result = dbapi.dict_entries(Search_Query)
     return(Database_Result)
    
