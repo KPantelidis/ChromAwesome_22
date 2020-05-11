@@ -209,7 +209,6 @@ def CDS_RE(Search_Query, RE_Site):
     param: user search query, resriction enzyme name. The search format must be in a string
     return: list of RE locations in seq '''
     CDS_Seq = CDS_DNA(Search_Query)
-    print(CDS_Seq)
     if CDS_Seq == []:
         print ('No CDS sites have been identified in DNA')
     
