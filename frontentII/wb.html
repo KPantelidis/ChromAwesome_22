@@ -1,0 +1,316 @@
+<!-- @author: Mohammad Faizan 
+
+html for intiial view of webpage
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+[data-tab-content] {
+  display: none;
+}
+
+/* display selected/active tab contents*/
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* change tabs from a list to headers on page */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black; 
+}
+
+/* cursor hover and tab spacing*/
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body {
+     font: 15pt Helvetica, Arial, serif;
+     background: #DADFF1;
+     margin: 0px;
+     padding: 5px;
+     }
+
+/* header logo and image */
+#header {display: flex;
+        flex-direction: row;
+        background: #333366;
+        }
+
+h1.site_name {text-align:center;
+              font: bold italic 80pt Helvetica, Arial, serif;
+              color: #1E90FF;
+              padding: 0px;
+              margin-top: 0;
+              position: relative;
+              bottom:-100px; 
+              }
+
+
+span.site_number {color:#B22222;
+                 }
+
+.ch22{background:#333366;
+     margin: 0;
+     float: left;
+     }
+
+/* formats restriction search box with */
+.ecor1{width: 40%;
+       height: 190px;
+       float: right;
+       position: relative;
+       top:-30px;
+       left: -20px;
+       }
+
+#re_search_format {width: 45%;
+                   height: 280px;
+	           padding: 5px;
+		   background: #87CEEB;
+                   border: 5px solid #333366;
+                   float: right;}
+
+/* Styles navigation bar */
+.topnav {overflow: hidden;
+         background-color: #333333;
+         }
+
+.topnav a {float: left;
+           color: #F2F2F2;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           font-size: 17px;
+           }
+
+.topnav a:hover {background-color: #DDDDDD;
+                 color: black;
+                 }
+
+.topnav a.active {background-color: #CD5C5C;
+                  color: white;
+                  }
+
+
+/* Styles page */
+#maincontent {clear:both;
+              width: 60%;
+              height: 50%;
+              margin: 0px;
+              padding: 0px;
+             }
+
+/* Styles tables */
+table {border-collapse:collapse;
+       width:40%
+      } 
+
+th, td {text-align:left;
+	padding: 8px;
+        color:#333366;
+        }
+tr:nth-child(even){background-color:#F2F2F2;
+                  }
+
+th {background-color:#333366;
+    color:#1E90FF;
+    }
+body { clear:both;
+              width: 100%;
+              height: 50%;
+              background: #DADFF1;
+              margin: auto;
+              padding: 5px;
+             }
+
+/* Styles main heading in all tab on navigation bar*/    
+.main_heads {
+       text-align:center;
+       font: bold 30pt Helvetica, Arial, serif;
+       color:  #1E90FF;
+       background: #333366;
+       padding: 14px 16px;
+       margin-top: 0px;
+       }
+
+/* Styles all sub-headings in all tabs on navigation bar*/
+.subheads {text-align:left;
+        font: bold italic 15pt Helvetica, Arial, serif;
+        color: #333366;
+        }
+
+/* Styles table in glossary*/
+table {border-collapse:collapse;
+       width:100%;
+      } 
+
+th, td {text-align:left;
+	padding: 8px;
+        color:#333366;
+    }
+tr:nth-child(even){background-color:#F2F2F2;
+                  }
+
+th {background-color:#333366;
+    color:#1E90FF;
+   }
+   
+
+/* Styles any sentence in the body*/
+.body_text {text-align:left;
+        font: 15pt Helvetica, Arial, serif;
+        color: #333366;
+        padding: 10px;
+	}
+
+</style>
+
+<title>Genome Browser</title>
+<script src="javascript.js" defer></script> <!--javascript deferred so it happens after html is loaded--> 
+</head>
+<body>
+<div id='header'>
+<h1 class='site_name'>ChromAwesome<span class='site_number'>22</span></h1>
+</div> 
+
+<ul class="tabs"> <!--class for tabs  and individual tab on webpage-->
+<!--create selector that selects specific tab div ids-->
+<li data-tab-target="#home" class="tab">Home</li> <!--default tab-->
+<li data-tab-target="#about" class="tab">About</li>
+<li data-tab-target="#search" class="tab">Search</li>
+<li data-tab-target="#RE" class="tab">Restriction Enzymes</li>
+<li data-tab-target="#analysis" class="tab">Analysis</li>
+<li data-tab-target="#codon" class="tab">The Codons</li>
+<a href='glossary.html'>Glossary</a>
+<a href='document.html'>Documentation</a>
+<a href='Team.html'>Team</a>
+</ul>
+  
+<!-- class for webpage tabs and data attributes to be formatted with javascript and css-->
+<div id="home" data-tab-content class="main_heads"> <!--default tab-->
+<h2>Home</h2>
+<p>A genome browser looking at genes in human chromosome 22. </p>
+</div>
+    
+<div id="about" data-tab-content>
+<h2>About</h2>
+<p>ChromAweosome 22 is a genomic browser developed as part of a collaborative project between MSc Bioinformatics and Systems Biology students at Birkbeck, University of London. This platform provides information on human chromosome 22 based on GRCh38 data from GenBank.</p>
+</div>
+    
+<div id="search" data-tab-content>
+<h2>Search Chromosome 22 for information about Genes using Gene Identifiers.</h2>
+<p>Search by:</p> 
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action = "/cgi-bin/cgiwrap/sm004/searchdb.py" >
+<input name="data" type="text" placeholder="E.g: AB002059" size="52" required />
+<!--label for gene identifier selection-->
+<select name= 'pulldown'>
+<optgroup label = Identifiers>
+<option id = 'gi'> Gene ID </option>
+<option id = 'protein'> Protein ID </option>
+<option id = 'gb'> Genbanks Accession </option>
+<option id = 'loc'> Chromosomal location </option>
+</optgroup>
+</select>
+<!-- label for text box where user enters identifier-->
+<input type ='text' name= 'x'/>        
+<p><input type ='submit' value= 'Search'/></p>
+<p><input type ='reset' value= 'Clear'/></p>
+</form>
+</div>
+<div id="RE" data-tab-content>
+<h2>Search Chromosome 22 to identify location of restriction enzymes.</h2>
+<p> Search by Accession number and name of the restriction enzyme</p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchRE.py" >
+<input name="data" type="text" placeholder="Enter Accession number and Restriction Enzyme" size="52" required />
+<p><input type ='submit' value= 'Search'/></p>
+<p><input type ='reset' value= 'Clear'/></p>
+</form>
+
+<p> To view restriction enzymes in CDS sequence of gene </p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchRRE.py" >
+       
+<!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number and Restriction Enzyme e.g. AB002059,EcoRI" size="62" required />
+<p><input type ='submit' value= 'Search'/></p> <p><input type ='reset' value= 'Clear'/></p>
+</form>
+</div>
+<div id="analysis" data-tab-content>
+<h2>CDS analysis.</h2>
+<p> To view marked up sequence that identifies CdS sites </p>
+      <!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchmarkup.py" >
+    <!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number e.g. AB002059" size="52" required />
+<p><input type ='submit' value= 'Search'/></p> <p><input type ='reset' value= 'Clear'/></p>
+</form>
+<p> For CDS information </p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchWmarkup.py" >      
+<!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number e.g. AB002059" size="52" required />
+        
+<p><input type ='submit' value= 'Search'/></p>
+<p><input type ='reset' value= 'Clear'/></p>
+</form>
+<p> To produce translated protein sequence</p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchPro.py">
+<!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number e.g. AB002059" size="52" required />
+<p><input type ='submit' value= 'Search'/></p>  <p><input type ='reset' value= 'Clear'/></p> 
+</form>
+<p> To match translated protein CDS sequence with original CDS sequence</p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchmatch.py" > 
+<!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number e.g. AB002059" size="52" required />
+<p><input type ='submit' value= 'Search'/></p>  <p><input type ='reset' value= 'Clear'/></p>
+</form>
+</div>
+<div id="codon" data-tab-content>
+<h2>The Codon in Chromosome 22</h2>>>>
+<p> To view codon usage frequencies </p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchcodon.py" > 
+<!-- label for text box where user enters identifier-->
+<input name="data" type="text" placeholder="Enter Accession number e.g. AB002059" size="52" required />
+<p><input type ='submit' value= 'Search'/></p> <p><input type ='reset' value= 'Clear'/></p>
+</form>
+<p> Calculate codon usage frequencies in whole chromosome</p>
+<!--form calls searchdb.py, a cgi script which search for genes using the gene identifiers-->
+<form method = "get" action ="/cgi-bin/cgiwrap/sm004/searchDNAcodon.py" >
+<!-- label for text box where user enters identifier-->
+<p><input type ='submit' value= 'Click to submit chromosome data'/></p> 
+</form>
+</div>
